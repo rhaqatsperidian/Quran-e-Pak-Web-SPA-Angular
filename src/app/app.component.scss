@@ -1,51 +1,66 @@
 /* Styling for the title within the toolbar */
 #menuTitle {
-    font-size: medium;  /* Set the font size to medium */
-    margin-right: 20px; /* Provide right margin for spacing */
+    font-size: medium;
+    /* Set the font size to medium */
+    margin-right: 20px;
+    /* Provide right margin for spacing */
 }
 
 /* Styling for the overall toolbar */
 .mat-toolbar {
-    height: 60px; /* Set the height of the toolbar to 60 pixels */
+    height: 60px;
+    /* Set the height of the toolbar to 60 pixels */
 }
 
 /* Styling for the side navigation */
 .mat-sidenav {
-    background-color: #3F51B5; /* Set background color to a specific shade of blue */
-    width: 160px; /* Set the width of the side navigation */
+    background-color: #3F51B5;
+    /* Set background color to a specific shade of blue */
+    width: 160px;
+    /* Set the width of the side navigation */
 }
 
 /* Styling for the container of side navigation items */
 .side-nav-items {
-    display: flexbox; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items in a column layout */
+    display: flexbox;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Arrange items in a column layout */
 }
 
 /* Styling for the side navigation menu items */
 .side-menu-item {
-    color: white !important; /* Set text color to white, important to override default styles */
-    margin-top: 20px; /* Provide top margin for spacing between items */
+    color: white !important;
+    /* Set text color to white, important to override default styles */
+    margin-top: 20px;
+    /* Provide top margin for spacing between items */
 }
 
 /* Styling for the main content area */
 .main-content {
-    margin: 20px; /* Provide margin around the main content */
+    margin: 20px;
+    /* Provide margin around the main content */
 }
 
-/* Media query for screens with a minimum width of 900px */
-@media (min-width: 900px) {
-    #menuIcon {
-        display: none; /* Hide the menu icon on larger screens */
-    }
+// /* Media query for screens with a minimum width of 900px */
+// @media (min-width: 900px) {
+//     #menuIcon {
+//         display: none; /* Hide the menu icon on larger screens */
+//     }
 
-    .mat-sidenav {
-        display: none; /* Hide the side navigation on larger screens */
-    }
-}
+//     .mat-sidenav {
+//         display: none; /* Hide the side navigation on larger screens */
+//     }
+// }
 
-/* Media query for screens with a maximum width of 900px */
-@media (max-width: 900px) {
-    .top-menu-item {
-        display: none; /* Hide the top menu items on smaller screens */
-    }
+// /* Media query for screens with a maximum width of 900px */
+// @media (max-width: 900px) {
+//     .top-menu-item {
+//         display: none; /* Hide the top menu items on smaller screens */
+//     }
+// }
+
+.top-menu-item {
+    display: none;
+    /* Hide the top menu items on smaller screens */
 }

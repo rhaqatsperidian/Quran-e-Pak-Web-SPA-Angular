@@ -16,25 +16,16 @@
 <mat-sidenav-container>
   <!-- Sidenav with fixed position, top gap, and side mode -->
   <mat-sidenav #sidenav [fixedInViewport]="true" [fixedTopGap]="60" mode="side">
-      <!-- Side navigation items with links and icons, each closing the sidenav on click -->
-      <div class="side-nav-items">
-          <div>
-              <!-- Closing the sidenav on click and navigating to home -->
-              <a (click)="sidenav.close()" mat-button routerLink="/"
-                  class="side-menu-item"><mat-icon>home</mat-icon>Home</a>
-          </div>
-          <div>
-              <!-- Closing the sidenav on click and navigating to contacts -->
-              <a (click)="sidenav.close()" mat-button routerLink="/contacts"
-                  class="side-menu-item"><mat-icon>people</mat-icon>Contacts</a>
-          </div>
-          <div>
-              <!-- Closing the sidenav on click and navigating to newcontact -->
-              <a (click)="sidenav.close()" mat-button routerLink="/newcontact"
-                  class="side-menu-item"><mat-icon>person_add</mat-icon>New Contact</a>
-          </div>
+    <!-- Side navigation items with links and icons, each closing the sidenav on click -->
+    <div class="side-nav-items">
+      <!-- Iterate over the Surah list and create a link for each Surah -->
+      <div *ngFor="let surah of surahList">
+        <a (click)="sidenav.close()" mat-button [routerLink]="['/surah', surah]"
+          class="side-menu-item"><mat-icon>book</mat-icon>{{ surah }}</a>
       </div>
+    </div>
   </mat-sidenav>
+  
 
   <!-- Sidenav content area with the main content rendered using router-outlet -->
   <mat-sidenav-content>

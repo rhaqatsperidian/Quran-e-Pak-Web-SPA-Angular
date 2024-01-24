@@ -14,7 +14,7 @@ export class DataService {
     return this.httpClient.get<any[]>(`${this.apiUrl}/GetAllQuranData?limit=${limit}`);
   }
 
-  getSurahList(): Observable<string[]> {
-    return this.httpClient.get<string[]>(`${this.apiUrl}/GetSurahList`);
+  getSurahList(): Observable<any[]> {
+    return this.httpClient.get<any[]>(`${this.apiUrl}/GetSurahList`);
   }
 }
