@@ -11,10 +11,12 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReaderViewComponent } from './readerview/readerview.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ReaderViewComponent
+    ReaderViewComponent,
+    HomeComponent
   ],
   imports: [
     HttpClientModule,
