@@ -2,3 +2,25 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: 'quranic';
+    src: url('assets/fonts/Al Mushaf Quran.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arabic-headings';
+    src: url('assets/fonts/MUHAMMADI QURANIC FONT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ar-text {
+    font-family: 'quranic', sans-serif;
+}
+
+.ar-heading {
+    font-family: 'arabic-headings', sans-serif;
+}
