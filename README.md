@@ -1,4 +1,4 @@
-# AlQuranApp
+# Al Quran App
 
 - This AlQuranApp project is developed using the following technologies:
 
