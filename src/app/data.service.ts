@@ -15,6 +15,10 @@ export class DataService {
   }
 
   getSurahList(): Observable<any[]> {
-    return this.httpClient.get<any[]>(`${this.apiUrl}/GetSurahList`);
+    return this.httpClient.get<any[]>(`${this.apiUrl}/SurahList`);
+  }
+
+  getSurahData(surahNumber:number): Observable<any[]> {
+    return this.httpClient.get<any[]>(`${this.apiUrl}/SurahText/${surahNumber}`);
   }
 }

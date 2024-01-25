@@ -20,8 +20,8 @@
     <div class="side-nav-items">
       <!-- Iterate over the Surah list and create a link for each Surah -->
       <div *ngFor="let surah of surahList">
-        <a (click)="sidenav.close()" mat-button [routerLink]="['/surah', surah]"
-          class="side-menu-item"><mat-icon>book</mat-icon>{{ surah }}</a>
+        <a (click)="sidenav.close()" mat-button [routerLink]="['/readerview', surah.surahId]"
+          class="side-menu-item"><mat-icon>book</mat-icon>{{ surah.surahName }}</a>
       </div>
     </div>
   </mat-sidenav>

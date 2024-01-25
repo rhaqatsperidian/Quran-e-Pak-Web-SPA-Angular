@@ -10,9 +10,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ReaderViewComponent } from './readerview/readerview.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReaderViewComponent
   ],
   imports: [
     HttpClientModule,
