@@ -8,7 +8,7 @@ import { DataService } from '../data.service';
   styleUrl: './readerview.component.scss'
 })
 export class ReaderViewComponent implements OnInit {
-  data:any;
+  data: any;
   combinedAr: any;
   constructor(private service: DataService, private route: ActivatedRoute) {
   }
@@ -22,20 +22,16 @@ export class ReaderViewComponent implements OnInit {
         console.log('Surah ID:', surahId);
         this.service.getSurahData(+surahId).subscribe(data => {
           this.data = data;
-  
-          // Extracting the "ar" values from each object in the array
-          const arValues = this.data.map((item:any) => item.ar);
-  
+
+          // Extracting the "ar" values from each object in the array excluding the first item
+          const arValues = this.data.slice(1).map((item: any) => item.ar);
+
           // Combining all "ar" values into a single string
           this.combinedAr = arValues.join('');
-  
-          // Log the combined string to the console
-          console.log('Combined "ar" values:', this.combinedAr);
-  
-          // Add your logic here based on the Surah ID
+
         });
       }
     });
   }
-  
+
 }
