@@ -1,13 +1,12 @@
 // Import necessary modules from Angular
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { ReaderViewComponent } from './readerview/readerview.component';
+import { HomeComponent } from './home/home.component';
 
 // Define your routes
 const routes: Routes = [
-<<<<<<< Updated upstream
-  { path: '', component: AppComponent },
+  { path: '', component: HomeComponent },
   { path: 'readerview/:surah', component: ReaderViewComponent },
 =======
   { path: '', component: HomeComponent },  // Default route leading to HomeComponent
