@@ -6,13 +6,10 @@ import { HomeComponent } from './home/home.component';
 
 // Define your routes
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'readerview/:surah', component: ReaderViewComponent },
-=======
   { path: '', component: HomeComponent },  // Default route leading to HomeComponent
   { path: 'readerview/:surah', component: ReaderViewComponent },  // Route for ReaderViewComponent with a dynamic parameter
   { path: '**', component: HomeComponent, pathMatch: 'full' },  // Wildcard route, redirects to HomeComponent if no matching route is found
->>>>>>> Stashed changes
+
 ];
 
 // Create and export the NgModule
